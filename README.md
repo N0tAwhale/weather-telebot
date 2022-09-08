@@ -17,7 +17,7 @@ def message_reply(message):
         bot.send_message(message.chat.id, 'Выберете ', reply_markup=keyboard2)
 
     if message.text == 'Погода сейчас в городе...':
-        bot.send_message(message.chat.id, 'Ведите название города!')
+        bot.send_message(message.chat.id, 'Введите название города!')
     if weather(message.text) is not None:
         bot.send_message(message.chat.id, weather(message.text))
     if message.text == 'Прогноз на 7 дней в вашем городе':
